@@ -10,12 +10,10 @@
     <div>
     <h1>Fetching Blocks Example</h1>
     <div id="app">Loading...</div>
-    <div id="app2">Loading...2</div>
-    <script type="module" src="/src/main.ts"></script>
     <script type="module">
-      import out from '/src/index.ts';
+      import out from '/src/data.ts';
       console.log(out);
-      document.querySelector('#app2').innerHTML = Array.isArray(out)
+      document.querySelector('#app').innerHTML = Array.isArray(out)
         ? out.map(x => `<div>${x}</div>`).join('')
         : out;
     </script>
