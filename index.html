@@ -2,16 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + bun</title>
+    <title>Viem + bun</title>
   </head>
   <body>
     <div>
-    <h1>Fetching Blocks Example</h1>
+    <h1>Viem SDK Example</h1>
     <div id="app">Loading...</div>
+    <script src="src/data.js"></script>
     <script type="module">
-      import out from '/src/data.ts';
       console.log(out);
       document.querySelector('#app').innerHTML = Array.isArray(out)
         ? out.map(x => `<div>${x}</div>`).join('')
